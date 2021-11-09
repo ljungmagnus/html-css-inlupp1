@@ -22,13 +22,17 @@ html, body {
     /* font-family: 'Roboto', sans-serif; */
     /* font-family: 'Roboto Slab', serif; */
 }
-.bg-grey {
+.bg {
+    background-color: var(--Background-color);
+    padding: 3rem;
+}
+/* .bg-grey {
     background-color: var(--Placehold-color);
     padding: 3rem;
 }
 .bg-blue {
     background-color: var(--Blue-color);
-    padding: 3rem;
+    padding: 3rem; */
 }
 .btn {
     padding: 1rem 3rem;
@@ -57,5 +61,46 @@ html, body {
     border-color: #fff;
     color: #fff;
 }
-
+.box-service {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 450px;
+    height: 436px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    justify-content: space-between;
+    align-items: center;
+    /* position: relative; */
+    padding: 5rem;
+}
+.box-service h3 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: var(--Title-color);
+}
+.box-service p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--Text-color);
+    margin-top: 1rem;
+}
+.text-center {
+    text-align: center;
+}
+.icon-background {
+    background-color: var(--Green-color);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: relative;
+}
+.image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
 
