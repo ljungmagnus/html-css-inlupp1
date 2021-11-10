@@ -32,8 +32,8 @@ html, body {
 }
 .bg-blue {
     background-color: var(--Blue-color);
-    padding: 3rem; */
-}
+    padding: 3rem; 
+} */
 .btn {
     padding: 1rem 3rem;
     border: 2px solid transparent; 
@@ -73,6 +73,15 @@ html, body {
     align-items: center;
     /* position: relative; */
     padding: 5rem;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    /* transition-delay: 1s; */
+
+}
+.box-service:hover {
+    box-shadow: 0px 10px 30px #0000001a;
+    
+
 }
 .box-service h3 {
     font-family: 'Roboto Slab', serif;
@@ -97,7 +106,7 @@ html, body {
     border-radius: 50%;
     position: relative;
 }
-.image {
+.icon {
     position: absolute;
     top: 50%;
     left: 50%;
