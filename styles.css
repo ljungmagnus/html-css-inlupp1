@@ -24,10 +24,7 @@ html, body {
 }
 
 /* Hjälpklasser för test */
-#services {
-    background-color: var(--Background-color);
-    padding: 3rem;
-}
+
 /* .bg-grey {
     background-color: var(--Placehold-color);
     padding: 3rem;
@@ -198,7 +195,26 @@ html, body {
     font-size: 18px;
     color: var(--Title-color);
 }
+#services {
+    padding-top: 9rem;
+    background-color: var(--Background-color);
+}
 
+#services h2 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 40px;
+    color:var(--Title-color);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 450px);
+    gap: 2rem;
+    justify-content: center;
+}
 .box-service {
     background-color: #fff;
     border-radius: 10px;
