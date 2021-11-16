@@ -23,16 +23,7 @@ html, body {
     /* font-family: 'Roboto Slab', serif; */
 }
 
-/* Hjälpklasser för test */
 
-/* .bg-grey {
-    background-color: var(--Placehold-color);
-    padding: 3rem;
-}
-.bg-blue {
-    background-color: var(--Blue-color);
-    padding: 3rem; 
-} */
 .container {
     width: 75%;
     margin: auto;
@@ -140,7 +131,7 @@ html, body {
     
 }
 .btn-white:hover {
-    background-color: var(--Blue-color);
+    background-color: transparent;
     border-color: #fff;
     color: #fff;
 }
@@ -198,6 +189,7 @@ html, body {
 #services {
     padding-top: 9rem;
     background-color: var(--Background-color);
+    padding-bottom: 9rem;
 }
 
 #services h2 {
@@ -206,9 +198,13 @@ html, body {
     font-size: 40px;
     color:var(--Title-color);
     margin-bottom: 2rem;
-    text-align: center;
 }
 
+.heading {
+    width: 450px;
+    border: 4px solid var(--Green-color);
+    text-align: center;   
+}
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, 450px);
@@ -267,4 +263,28 @@ html, body {
     left: 50%;
     transform: translate(-50%,-50%);
 }
-
+#appointment {
+    background-color:#2ba8eccc;
+    padding: 5.5rem 0;
+}
+#appointment .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#appointment p {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: #fff;
+}
+#foot {
+    background-color: var(--Blue-color);
+    padding: 2rem 0;
+}
+#foot p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color:#f3fbff99;
+}
