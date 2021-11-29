@@ -23,11 +23,14 @@ html, body {
     /* font-family: 'Roboto Slab', serif; */
 }
 
-
 .container {
     width: 75%;
     margin: auto;
 }
+.d-flex {
+    display: flex;
+}
+
 .top-menu {
     background-color: var(--White-color-opacity-60);
     border: 1px solid var(--Border-color-opacity-60);
@@ -191,19 +194,20 @@ html, body {
     background-color: var(--Background-color);
     padding-bottom: 9rem;
 }
-
-#services h2 {
+.heading {
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+    border-bottom: 4px solid var(--Green-color);
+    text-align: center;
+    padding-bottom: 1.25rem;
+    margin-bottom: 70px;   
+}
+.heading h2 {
     font-family: 'Roboto Slab', serif;
     font-weight: 400;
     font-size: 40px;
     color:var(--Title-color);
-    margin-bottom: 2rem;
-}
-
-.heading {
-    width: 450px;
-    border: 4px solid var(--Green-color);
-    text-align: center;   
 }
 .grid {
     display: grid;
