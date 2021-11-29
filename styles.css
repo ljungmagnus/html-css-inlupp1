@@ -24,13 +24,10 @@ html, body {
 }
 
 .container {
-    width: 75%;
+    width: 80%;
+    max-width: 1410px;
     margin: auto;
 }
-.d-flex {
-    display: flex;
-}
-
 .top-menu {
     background-color: var(--White-color-opacity-60);
     border: 1px solid var(--Border-color-opacity-60);
@@ -66,9 +63,7 @@ html, body {
     justify-content: space-between;
     align-items: center;
 }
-/* .logo {
-    
-} */
+
 .navbar {
     list-style: none;
     display: flex;
@@ -81,12 +76,19 @@ html, body {
     color: var(--Title-color);
     padding-left: 2.5rem;
 }
+.navbar-toggler {
+    display: none;
+    color: var(--Blue-color);
+    font-size: 3rem;
+}
 #showcase {
     background-color: var(--Placehold-color);
 }
-#showcase img {
+.woman img {
+    margin-bottom: -3px;
+    margin-left: -2rem;
     margin-top: 1.3rem;
-    margin-bottom: 0px;
+    margin-right: 1rem; 
 }
 #showcase .container {
     display: flex;
@@ -95,8 +97,6 @@ html, body {
 }
 .slider {
     width: 50%;
-    padding: 1rem;
-
 } 
 .slider h1 {
     font-family: 'Roboto Slab', serif;
@@ -109,7 +109,10 @@ html, body {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     color: var(--Text-color); 
-    margin-bottom: 2.5rem;
+    /* margin-bottom: 2.5rem; */
+}
+.slider .btn-green {
+    margin-top: 2.5rem;
 }
 .btn {
     padding: 1rem 3rem;
@@ -138,6 +141,7 @@ html, body {
     border-color: #fff;
     color: #fff;
 }
+
 #about-us .container {
     display: flex;
     justify-content: space-between;
@@ -171,7 +175,7 @@ html, body {
    margin-bottom: 3rem;
 }
 .numbers {
-    width: 578px;
+    padding-right: 8rem;
     margin-top: 3.75rem;
     display: flex;
     justify-content: space-between;
@@ -189,6 +193,11 @@ html, body {
     font-size: 18px;
     color: var(--Title-color);
 }
+.man img {
+    margin-bottom: -4px;
+    padding-right: 6rem;
+}
+
 #services {
     padding-top: 9rem;
     background-color: var(--Background-color);
@@ -197,7 +206,8 @@ html, body {
 .heading {
     margin-left: auto;
     margin-right: auto;
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
     border-bottom: 4px solid var(--Green-color);
     text-align: center;
     padding-bottom: 1.25rem;
@@ -212,19 +222,20 @@ html, body {
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, 450px);
-    gap: 2rem;
+    gap: 1.8rem;
     justify-content: center;
 }
 .box-service {
     background-color: #fff;
     border-radius: 10px;
-    width: 450px;
-    height: 436px;
+    /* width: 450px;
+    height: 436px; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 5rem;
+    padding: 71px 50px; 
+    
     transition-duration: 0.3s;
     transition-timing-function: ease-out;
         
@@ -242,13 +253,15 @@ html, body {
     font-weight: 400;
     font-size: 22px;
     color: var(--Title-color);
+    margin-bottom: 1rem;
 }
 .box-service p {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 18px;
     color: var(--Text-color);
-    margin-top: 1rem;
+    line-height: 1.5;
+    
 }
 .text-center {
     text-align: center;
@@ -258,8 +271,8 @@ html, body {
     width: 120px;
     height: 120px;
     border-radius: 50%;
+    margin-bottom: 3rem;
     position: relative;
-    
 }
 .icon {
     position: absolute;
@@ -292,3 +305,123 @@ html, body {
     font-size: 16px;
     color:#f3fbff99;
 }
+
+.border {
+    border: 1px solid red;
+}
+/* DESKTOP FIRST */
+/* XX-Large devices (larger desktops) */
+/* No media query since the xxl breakpoint has no upper bound on its width */
+
+/* X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) { 
+    .woman img {
+        margin-right: 1rem;
+        padding: 0;
+        width: 100%;
+    }
+    .man {
+        display: none;
+    }
+
+    #about-us {
+        padding-block: 8rem;
+    }
+    .woman {
+                  
+        flex: 1;
+    }
+    .slider {
+        /* width: 100%; */
+        flex: 1;
+        
+    }
+    #showcase .container {
+        justify-content: center;
+    }
+    .about {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        
+    }
+    .about-text {
+        flex: 2;
+    }
+    .numbers {
+        padding: 0;
+        margin: 0;
+        flex: 1;
+        flex-direction: column;
+        text-align: center;
+        gap: 3rem;
+    }
+    
+    
+}
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { 
+    #appointment .container {
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
+}
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+    .navbar {
+        display: none;
+    }
+    .navbar-toggler {
+        display: block;
+    }
+    #showcase, #about-us, #services, #appointment {
+        padding-block: 3rem;
+    }
+    .woman {
+        display: none;
+    }
+    .slider {
+        text-align: center;
+    }
+    .about-text {
+        display: none;
+    }
+    
+
+}
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+    .container {
+        width: 100%;
+        max-width: 614px;
+    }
+    .top-menu {
+        display: none;
+    }
+
+}
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .container {
+       padding: 0 0.5rem;
+    }
+    .grid {
+        
+        grid-template-columns: repeat(auto-fill, 350px);
+        
+    }
+    .heading {
+        max-width: 350px;
+    } 
+    .box-service {
+        padding: 2rem 0rem; 
+    }
+
+}
+@media (max-width: 375px) {
+
+}
+    
+
+
